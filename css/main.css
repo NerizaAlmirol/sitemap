@@ -1,19 +1,36 @@
 .main-container {
-    width: 1050px;
+    max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Create four equal columns that floats next to each other */
+.row{
+    display: flex; 
+    padding: 0.5em;
+    width: 100%;
+}
+
 .column {
-    float: left;
-    width: 25%;
-    padding: 0px;
-    height: 300px; /* Should be removed. Only for demonstration */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+}
+
+.column p {
+	flex: 1 0 auto;
+}
+
+@media all and (min-width: 40em) {
+    .column {
+      width: 50%;
+    }
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  @media all and (min-width: 60em) {
+    .column {
+      width: 33.33%;
+    }
   }
