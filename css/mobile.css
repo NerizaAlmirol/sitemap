@@ -1,0 +1,36 @@
+.main-container {
+    max-width: 720x;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.odp-sitemap h1{
+    font: 400 48px/50px FormaDJRMicro !important;
+    margin-bottom: 32px;
+}
+
+.sm-title {
+    border-bottom: 1px solid #000;
+}
+
+.sm-title h2 {
+    font: 400 32px/38px FormaDJRMicro !important;
+    margin-bottom: 12px;
+}
+
+
+
+.sm-col a {
+    font: 700 28px/34px FormaDJRMicro !important; 
+    color: #4759F5;
+    text-decoration: underline;
+}
+
+.sm-col:first-of-type {
+    padding: 32px 0 0 0;
+}
+
+.sm-col:last-of-type {
+    padding: 0 0 32px 0;
+}

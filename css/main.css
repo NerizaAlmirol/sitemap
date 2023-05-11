@@ -2,15 +2,21 @@
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
+    padding: 56px 0;
 }
 
 .odp-sitemap h1{
     font: 400 34px/40px FormaDJRMicro !important;
+    margin-bottom: 32px;
 }
 
 .sm-title {
     border-bottom: 1px solid #000;
-    font: 400 22px/28px FormaDJRMicro !important;
+}
+
+.sm-title h2 {
+    font: 400 16px/22px FormaDJRMicro !important;
+    margin-bottom: 4px;
 }
 
 .sm-cols {
@@ -22,6 +28,7 @@
 
 .sm-col {
     flex: 25%;
+    padding: 20px 0;
 }
 
 .sm-cols {
@@ -31,8 +38,19 @@
     flex-wrap: wrap;
 }
 
+.sm-col a {
+    font: 700 14px/18px FormaDJRMicro !important; 
+    color: #4759F5;
+    text-decoration: underline;
+}
+
 @media (min-width: 45em) {
     .sm-cols {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; 
+    }
+
+    .sm-col {
+        width: 100%;
     }
 }
+
