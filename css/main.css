@@ -2,35 +2,37 @@
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
-.row{
-    display: flex; 
-    padding: 0.5em;
+.odp-sitemap h1{
+    font: 400 34px/40px FormaDJRMicro !important;
+}
+
+.sm-title {
+    border-bottom: 1px solid #000;
+    font: 400 22px/28px FormaDJRMicro !important;
+}
+
+.sm-cols {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.column {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  width: 100%;
+.sm-col {
+    flex: 25%;
 }
 
-.column p {
-	flex: 1 0 auto;
+.sm-cols {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-@media all and (min-width: 40em) {
-    .column {
-      width: 50%;
+@media (min-width: 45em) {
+    .sm-cols {
+        flex-wrap: nowrap;
     }
-  }
-  @media all and (min-width: 60em) {
-    .column {
-      width: 33.33%;
-    }
-  }
+}
