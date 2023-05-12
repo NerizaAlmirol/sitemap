@@ -28,7 +28,7 @@
 
 .sm-col {
     flex: 25%;
-    padding: 20px 0;
+    padding: 20px 32px 20px 0;
 }
 
 .sm-cols {
@@ -40,8 +40,16 @@
 
 .sm-col a {
     font: 700 14px/18px FormaDJRMicro !important; 
-    color: #4759F5;
+    color: #4759F5 !important;
     text-decoration: underline;
+}
+
+.sm-col p {
+    margin-bottom: 8px !important;
+}
+
+.sm-col a:hover {
+    background: #EDEEFE;
 }
 
 @media (min-width: 45em) {
